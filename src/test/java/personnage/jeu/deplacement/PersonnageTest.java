@@ -25,5 +25,9 @@ public class PersonnageTest {
     public void testTournerDeuxFois() {
         assertEquals("SUD", p.tourner(2));
     }
+    @Test
+    public void testTournerTroisFois() {
+        assertEquals("OUEST", p.tourner(3));
+    }
 
 }
