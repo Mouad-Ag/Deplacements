@@ -41,5 +41,8 @@ public class PersonnageTest {
     public void testTournerMoinsUneFois() {
         assertEquals("OUEST", p.tourner(-1));
     }
-
+    @Test
+    public void testTournerMoinsDixHuitFois() {
+        assertEquals("SUD", p.tourner(-18));
+    }
 }
