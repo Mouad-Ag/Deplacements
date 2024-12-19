@@ -29,5 +29,9 @@ public class PersonnageTest {
     public void testTournerTroisFois() {
         assertEquals("OUEST", p.tourner(3));
     }
+    @Test
+    public void testTournerQuatreFois() {
+        assertEquals("NORD", p.tourner(4));
+    }
 
 }
