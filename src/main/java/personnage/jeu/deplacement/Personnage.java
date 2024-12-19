@@ -2,6 +2,7 @@ package personnage.jeu.deplacement;
 
 public class Personnage {
     public String tourner(int i) {
-        return "EST";
+        if (i % 4 == 1) return "EST";
+        return null;
     }
 }
