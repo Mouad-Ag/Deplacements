@@ -9,5 +9,10 @@ public class PersonnageTest {
         Personnage personnage = new Personnage();
         assertEquals("EST", personnage.tourner(1));
     }
+    @Test
+    public void testTournerDeuxFois() {
+        Personnage personnage = new Personnage();
+        assertEquals("SUD", personnage.tourner(2));
+    }
 
 }
