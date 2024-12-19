@@ -33,5 +33,9 @@ public class PersonnageTest {
     public void testTournerQuatreFois() {
         assertEquals("NORD", p.tourner(4));
     }
+    @Test
+    public void testTournerDouzeFois() {
+        assertEquals("NORD", p.tourner(12));
+    }
 
 }
