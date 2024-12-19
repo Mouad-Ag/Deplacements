@@ -1,18 +1,29 @@
 package personnage.jeu.deplacement;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PersonnageTest {
+    private  Personnage p;
+    @BeforeEach
+    public void setUp() {
+        p = new Personnage();
+    }
+
+    @AfterEach
+    public void tearDown() {
+        p = null;
+    }
+
     @Test
     public void testTournerUneFois() {
-        Personnage personnage = new Personnage();
-        assertEquals("EST", personnage.tourner(1));
+        assertEquals("EST", p.tourner(1));
     }
     @Test
     public void testTournerDeuxFois() {
-        Personnage personnage = new Personnage();
-        assertEquals("SUD", personnage.tourner(2));
+        assertEquals("SUD", p.tourner(2));
     }
 
 }
